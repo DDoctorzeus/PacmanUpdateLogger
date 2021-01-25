@@ -1,0 +1,9 @@
+[Trigger]
+Type = Path
+Operation = Upgrade
+Target = *
+
+[Action]
+Description = Trigger Upgrade Log   
+When = PostTransaction
+Exec = /usr/local/sbin/pacman_updatelogger.sh 
