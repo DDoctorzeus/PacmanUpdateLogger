@@ -55,6 +55,7 @@ for UPGRADELOG in "${UPGRADELOGS[@]}"; do
     fi
 done
 
-#Finally dump package list to log file
-echo "${NEWPACKAGELIST[@]}" | sed 's/ /\n/g' | sort -u > $NEWLOGFILE;
-#echo "${NEWPACKAGELIST[@]}" | sed 's/ /\n/g' | sort -u
+#Dump packages to log file if not empty
+if [ ${#NEWPACKAGELIST[@]} -ne 0 ]; then
+    echo "${NEWPACKAGELIST[@]}" | sed 's/ /\n/g' | sort -u > $NEWLOGFILE;
+fi
