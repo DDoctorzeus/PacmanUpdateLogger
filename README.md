@@ -22,6 +22,9 @@ After each pacman upgrade a new log file should then appear under "/var/log/pacm
 
 Downgrading Packages From Logs:
 
+EDIT: I highly recommend using a tool such as "downgrade" (https://aur.archlinux.org/packages/downgrade) instead of doing this manually.
+
+Manual Method:
 1. CHECK THE LOG FILE FIRST TO MAKE SURE IT LOOKS OK.
 2. Navigate to "/var/cache/pacman/pkg" (or wherever your pacman cache dir is located).
 3. Execute a downgrade using log file contents as input (e.g. (assuming "210125_155553.log" is the name of the log file): "sudo pacman -U - < /var/log/pacman_upgrades/210125_155553.log").
