@@ -4,7 +4,7 @@ A simple (yet useful) script that stores the names of updated packages after an 
 
 This Program/Script Is Lisenced Under GNU V3 (https://www.gnu.org/licenses/gpl-3.0.en.html) and comes with ABSOLUTELY NO WARRANTY. You may distribute, modify and run it however you must not claim it as your own nor sublisence it.
 
-Please note this was written for my personal workstation and I have released it on github in case anyone else finds it useful or wants to contribute.. :) Please know that while this logs upgraded packages it still relies on users to be smart and not use it blindly. I (and Techtonic Software) take no repsonsibility for any damage to systems which utilize it through either the script or its output/log files (YOUVE BEEN WARNED).
+Please note this was written for my personal workstation and I have released it on github in case anyone else finds it useful or wants to contribute.. :) Please know that while this logs upgraded packages it still relies on users to be smart and not use it blindly. I take no repsonsibility for any damage to systems which utilize it through either the script or its output/log files (YOUVE BEEN WARNED).
 
 This script compares upgraded packages in the main pacman log ("/var/log/pacman.log") to those in your package cache (default "/var/cache/pacman/pkg") and logs a record of these packages in "/var/log/pacman_upgrades" with a datestamp. This allows easy downgrade of packages after an upgrade if needed rather than having to manually search the logs for each package while still attempting to hold true to the "KISS" philosophy ("Keep It Simple, Stupid").
 
